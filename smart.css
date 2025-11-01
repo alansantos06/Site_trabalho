@@ -1,0 +1,201 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color:      #84d263;
+    ;
+    color: #aaa
+    ;
+}
+
+h1, h2, h3 {
+    margin: 0;
+}
+
+/* ----------- CABEÇALHO ----------- */
+.cabecalho {
+    position: relative;
+    height: 100vh;
+
+                
+    color: rgb(249, 249, 249);
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.logo-container {       
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo {
+    width: 60px;
+}
+
+.titulo-logo {
+    font-size: 1.4rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.menu a:hover {
+    color: #a6ff7f;
+}
+
+/* ----------- BANNER PRINCIPAL ----------- */
+.banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 85%;
+    text-align: center;
+    padding: 0 20px;
+}
+.card_inicio{
+    background: #1a1a1a;
+    color: white;
+    padding: 100px;
+    border-radius: 15px;
+    width: 500px;
+    box-sizing: 20px 40px rgba(0,0,0,0.3);
+    
+   
+
+}
+
+.banner-texto h2 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.banner-texto p {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+}
+
+.botao {
+    background: #a6ff7f;
+    color: #000;
+    padding: 12px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 700;
+    transition: 0.3s;
+    display: inline-block;
+}
+
+.botao:hover {
+    background: #7fe065;
+}
+
+/* ----------- PLANOS ----------- */
+.planos {
+    text-align: center;
+    padding: 80px 20px;
+    background-color: #fff;
+}
+
+.container-planos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.card {
+    background: #1a1a1a;
+    color: white;
+    padding: 30px;
+    border-radius: 15px;
+    width: 280px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    transition: transform 0.3s;
+    border: 2px solid #a6ff7f;
+}
+
+
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.card.destaque {
+    border: 2px solid #a6ff7f;
+}
+
+.preco {
+    display: block;
+    font-size: 1.3rem;
+    margin: 15px 0;
+}
+
+/* ----------- SOBRE ----------- */
+.sobre {
+    text-align: center;
+    padding: 80px 20px;
+    background: #f2f2f2;
+}
+
+.imagem-sobre {
+    width: 500px;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+/* ----------- CONTATO ----------- */
+.contato {
+    text-align: center;
+    padding: 80px 20px;
+    background: #1a1a1a;
+    color: white;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input, textarea {
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    font-size: 1rem;
+}
+
+button.botao {
+    
+    cursor: pointer;
+}
+
+/* ----------- RODAPÉ ----------- */
+.rodape {
+    text-align: center;
+    background: #0d0d0d;
+    color: #222;
+    padding: 20px;
+}
