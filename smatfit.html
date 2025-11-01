@@ -3,32 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Selva Academia - Página Inicial</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Selva Academi</title>
+    <link rel="stylesheet" href="smart.css">
 </head>
 <body>
-    <header>
-        <h1>Seu guia para habitos saudaveis e uma vida equilibrada</h1>
-        <p>Dicas e técnicas de exercícios e alimentação </p>
-        <nav>
-            <ul>
-                <li><a href="smatfit.html">Início</a></li>
-                <li><a href="treinos.html">Treinos</a></li>
-                <li><a href="alimentos.html">Alimentos</a></li>
+    <header class="cabecalho">
+        <nav class="nav">
+            <div class="logo-container">                        
+                <img src="logo.png" alt="Logo da Selva Academia" class="logo">
+                <h1 class="titulo-logo">Selva Academia</h1>
+            </div>
+            <ul class="menu">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#treinos">Treinos</a></li>
+                <li><a href="#alimentos">Alimentação</a></li>
+                <li><a href="#planos">Planos</a></li>
+                <li><a href="#sobre">Sobre Nós</a></li>
+                <li><a href="#contato">Contato</a></li>
             </ul>
         </nav>
+
+        <section id="inicio" class="banner">
+            <div class="banner-texto">
+                <div class="card_inicio">
+                    <h2>Supere seus limites</h2>
+                    <p>Treine com foco, alimente-se bem e conquiste o corpo e a mente que você merece.</p>
+                    <!-- <img src="gym.jpg" alt="imagem fundo" class="imagem-sobre" > -->
+                </div>
+            </div>
+        </section>
     </header>
 
     <main>
-        <section>
-            <h2>Nosso Compromisso</h2>
-            <p>Na Selva Academia, oferecemos treinos personalizados para todos os objetivos: hipertrofia, emagrecimento, e condicionamento físico. Aqui você encontra um ambiente motivador e equipamentos de ponta!</p>
+        <section id="planos" class="planos">
+            <h2>Nossos Planos</h2>
+            <div class="container-planos">
+                <div class="card">
+                    <h3>Plano Básico</h3>
+                    <p>Acesso à musculação e treinos livres.</p>
+                    <span class="preco">R$ 79,90/mês</span>
+                    <a href="assinatura1.html" class="botao">Assinar</a>
+                </div>
+                <div class="card destaque">
+                    <h3>Plano Intermediário</h3>
+                    <p>Inclui musculação, aeróbico e acompanhamento nutricional.</p>
+                    <span class="preco">R$ 119,90/mês</span>
+                    <a href="assinatura2.html" class="botao">Assinar</a>
+                </div>
+                <div class="card">
+                    <h3>Plano Premium</h3>
+                    <p>Treinos personalizados, nutricionista e personal trainer exclusivo.</p>
+                    <span class="preco">R$ 189,90/mês</span>
+                    <a href="assinatura3.html" class="botao">Assinar</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="sobre" class="sobre">
+            <h2>Sobre Nós</h2>
+            <p>
+                A <strong>Selva Academia</strong> nasceu com a missão de transformar vidas por meio do movimento. 
+                Acreditamos que o treino é mais do que estética — é equilíbrio, saúde e superação.
+            </p>
+            <img src="academia_moderna.png" alt="Foto moderna da academia" class="imagem-sobre">
+        </section>
+
+        <section id="contato" class="contato">
+            <h2>Fale Conosco</h2>
+            <p>Entre em contato para saber mais sobre nossos planos e agendar uma aula experimental.</p>
+            <form>
+                <input type="text" placeholder="Seu nome" required>
+                <input type="email" placeholder="Seu e-mail" required>
+                <textarea placeholder="Sua mensagem" rows="4" required></textarea>
+                <button type="submit" class="botao">Enviar Mensagem</button>
+            </form>
         </section>
     </main>
 
-    <footer>
-        <p> 2025 - Selva Academia</p>
+    <footer class="rodape">
+        <p> 2025 - Selva Academia | Todos os direitos reservados</p>
     </footer>
-
 </body>
 </html>
